@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/comm_ripple">
+    <item>
+        <selector>
+            <!--<item>
+                <shape>
+                    <solid android:color="@color/lay_comm_bg"></solid>
+                </shape>
+            </item>-->
+
+            <!--<item android:state_selected="true">
+                <shape>
+                    <solid android:color="@color/colA8B3D4"></solid>
+                </shape>
+            </item>
+
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/colA8B3D4"></solid>
+                </shape>
+            </item>-->
+
+            <item android:drawable="@color/colDCDCDC" android:state_selected="true"/>
+            <item android:drawable="@color/colDCDCDC" android:state_pressed="true"/>
+        </selector>
+    </item>
+</ripple>

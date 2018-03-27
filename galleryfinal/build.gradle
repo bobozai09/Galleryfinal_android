@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+  //compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile 'cn.finalteam:toolsfinal:1.1.4'systembartint
+    //    compile rootProject.ext.dependencies["support-v4"]
+    //    compile rootProject.ext.dependencies["systembartint"]
+  //implementation project(':app')
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.android.support:support-v4:27.0.2'
+}
+
+//apply from: "../bintray.gradle"
